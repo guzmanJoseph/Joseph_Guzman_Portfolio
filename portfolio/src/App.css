@@ -56,6 +56,31 @@
   }
 }
 
+.logo-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: white;
+  color: black;
+
+  padding: 14px 22px;
+  border-radius: 12px;
+
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.icon-button:hover {
+  opacity: 0.85;
+}
+
 #center {
   display: flex;
   flex-direction: column;
