@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './projectPage.css'
+import './projectpage.css'
 
 function Sudoku() {
   return (
