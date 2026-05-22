@@ -113,12 +113,12 @@ a {
   
 }
 
-.hero h2 {
+.name h2 {
   background: linear-gradient(
     90deg,
+    #ffffff,
     #58a6ff,
-    #3fb950,
-    #58a6ff
+    #ff003c
   );
 
   background-size: 200%;
@@ -674,6 +674,33 @@ a {
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 14px;
+}
+
+.cyber-header {
+  background: linear-gradient(
+    90deg,
+    #ff003c,
+    #ff4d4d,
+    #ffffff,
+    #ff003c
+  );
+
+  background-size: 200%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: cyberFlow 5s linear infinite;
+}
+
+@keyframes cyberFlow {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 200%;
+  }
 }
 
 .footer {

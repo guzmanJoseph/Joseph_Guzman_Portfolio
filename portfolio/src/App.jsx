@@ -52,7 +52,7 @@ function Home() {
           />
 
           <section id="about" className="section">
-            <h2>About</h2>
+            <h2 className='cyber-header'>About</h2>
             <p className="about">
               I am a senior computer science student at the University of Florida. I am
               interested in full-stack development, database systems, and software engineering.
@@ -94,7 +94,7 @@ function Home() {
             Resume
           </p>
 
-          <h2 className="resume-title">
+          <h2 className="cyber-header">
             Download My Resume
           </h2>
 
@@ -116,7 +116,7 @@ function Home() {
             Experience
           </p>
 
-          <h2 className="section-title">
+          <h2 className="cyber-header">
             Professional Experience
           </h2>
 
@@ -240,7 +240,7 @@ function Home() {
             Projects
           </p>
           
-          <h2>Check out my projects!</h2>
+          <h2 className="cyber-header">Check out my projects!</h2>
 
           <div className="project-grid">
             <Link to="/projects/gatorkeys" className="project-card">
@@ -280,7 +280,7 @@ function Home() {
             Skills
           </p>
 
-          <h2 className="section-title">
+          <h2 className="cyber-header">
             Technical Skills
           </h2>
 
