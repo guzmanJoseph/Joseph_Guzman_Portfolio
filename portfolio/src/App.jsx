@@ -13,7 +13,7 @@ function Home() {
       return (
       <div className="site">
         <nav className="navbar">
-          <h1 className="logo">Joseph Guzman</h1>
+          <h1 className="logo">joseph@portfolio:~$</h1>
 
           <div className="nav-links">
             <a href="#home">Home</a>
@@ -28,7 +28,21 @@ function Home() {
 
         <section className="hero">
           <div className="name">
-            <h2>Joseph Guzman</h2>
+            <div className="terminal-box">
+              <p className="terminal-command">$ who am i</p>
+
+              <h2>Joseph Guzman</h2>
+
+              <p className="terminal-subtitle">
+                Computer Science Student | Full-Stack Developer
+              </p>
+
+              <p className="terminal-command">$ current_focus</p>
+
+              <p className="terminal-text">
+                AI systems, real-time applications, and software engineering.
+              </p>
+            </div>
           </div>
 
           <img
@@ -337,6 +351,7 @@ function Home() {
 
         <footer id="contact" className="footer">
           <p>joseph.guzman05@hotmail.com</p>
+          <p>561-891-9058</p>
         </footer>
       </div>
     )
