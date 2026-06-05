@@ -21,72 +21,74 @@ function Home() {
             <a href="#resume">Resume</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#projects">Skills</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
 
-        <section className="hero">
-          <div className="name">
-            <div className="terminal-box">
-              <p className="terminal-command">$ who am i</p>
+        <section id="home" className="hero">
+          <div className="hero-top">
+            <div className="name">
+              <div className="terminal-box">
+                <p className="terminal-command">who am i</p>
 
-              <h2>Joseph Guzman</h2>
+                <h2>Joseph Guzman</h2>
 
-              <p className="terminal-subtitle">
-                Computer Science Student | Full-Stack Developer
-              </p>
+                <p className="terminal-subtitle">
+                  Computer Science Student | Full-Stack Developer
+                </p>
 
-              <p className="terminal-command">$ current_focus</p>
+                <p className="terminal-command">current_focus</p>
 
-              <p className="terminal-text">
-                AI systems, real-time applications, and software engineering.
-              </p>
+                <p className="terminal-text">
+                  AI systems, real-time applications, and software engineering.
+                </p>
+              </div>
+
+              <div className="logo-group">
+                <a
+                  href="https://github.com/guzmanJoseph"
+                  target="_blank"
+                  className="button"
+                >
+                  <FaGithub className='icon' />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/joseph-guzman-069972246/?skipRedirect=true"
+                  target="_blank"
+                  className="button"
+                >
+                  <FaLinkedin className='icon'/>
+                </a>
+
+                <a
+                  href="mailto:joseph.guzman05@hotmail.com"
+                  target="_blank"
+                  className="button"
+                >
+                  <FaEnvelope className='icon'/>
+                </a>
+              </div>
             </div>
+
+            <img
+              src={profilePic}
+              alt="Joseph Guzman"
+              className="profile-image"
+            />
           </div>
+        </section>
 
-          <img
-            src={profilePic}
-            alt="Joseph Guzman"
-            className="profile-image"
-          />
-
-          <section id="about" className="section">
-            <h2 className='cyber-header'>About</h2>
-            <p className="about">
-              I am a senior computer science student at the University of Florida. I am
-              interested in full-stack development, database systems, and software engineering.
-              I enjoy building meanigful applications that combine having a intuitive user experience
-              with efficient backend and data-driven functionality.
-            </p>
-          </section>
-
-          <div className="logo-group">
-            <a 
-              href="https://github.com/guzmanJoseph"
-              target="_blank"
-              className="button"
-            >
-              <FaGithub className='icon' />
-            </a>
-
-            <a 
-              href="https://www.linkedin.com/in/joseph-guzman-069972246/?skipRedirect=true"
-              target="_blank"
-              className="button"
-            >
-              <FaLinkedin className='icon'/>
-            </a>
-
-            <a
-            href="mailto:joseph.guzman05@hotmail.com"
-            target="_blank"
-            className="button"
-            >
-              <FaEnvelope className='icon'/>
-            </a>
-          </div>
-
+        <section id="about" className="section">
+          <p className="section-label">About</p>
+          <h2 className='cyber-header'>Who I Am</h2>
+          <p className="about">
+            I am a senior computer science student at the University of Florida. I am
+            interested in full-stack development, database systems, and software engineering.
+            I enjoy building meaningful applications that combine an intuitive user experience
+            with efficient backend and data-driven functionality.
+          </p>
         </section>
 
         <section id="resume" className='section'>
