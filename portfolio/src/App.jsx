@@ -8,6 +8,8 @@ import SoccerAnalysis from './pages/soccer_analysis'
 import Sudoku from './pages/sudoku'
 import PersonalPortfolio from './pages/personal_portfolio'
 import WebchatApplication from './pages/webchat'
+import Stacked from './pages/stacked'
+import Offerly from './pages/offerly'
 
 function Home() {
       return (
@@ -55,7 +57,7 @@ function Home() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/joseph-guzman-069972246/?skipRedirect=true"
+                  href="https://www.linkedin.com/in/joseph-guzman-cs/"
                   target="_blank"
                   className="button"
                 >
@@ -63,7 +65,7 @@ function Home() {
                 </a>
 
                 <a
-                  href="mailto:joseph.guzman05@hotmail.com"
+                  href="mailto:jguzmannn05@gmail.com"
                   target="_blank"
                   className="button"
                 >
@@ -105,7 +107,7 @@ function Home() {
           </p>
           
           <a 
-              href="/Joseph_Guzman_Master_Resume.pdf"
+              href="/resume.pdf"
               target="_blank"
               className="resume-button"
             >
@@ -245,36 +247,57 @@ function Home() {
           <h2 className="cyber-header">Check out my projects!</h2>
 
           <div className="project-grid">
-            <Link to="/projects/gatorkeys" className="project-card">
-              <h3>GatorKeys</h3>
-              <p>Student housing marketplace built for UF students.</p>
-            </Link>
 
-            <Link to="/projects/pickleportal" className="project-card">
-              <h3>PicklePortal</h3>
-              <p>Real-time pickleball court tracking dashboard.</p>
-            </Link>
+          <Link to="/projects/stacked" className="project-card">
+            <h3>Stacked</h3>
+            <p>
+              Full-stack iOS poker bankroll tracker for sessions, analytics,
+              home game payouts, groups, and leaderboards.
+            </p>
+          </Link>
 
-            <Link to="/projects/soccer_analysis" className="project-card">
-              <h3>Soccer Analysis Project</h3>
-              <p>Program using the YOLOv5 detection model to be able to detect players, referees, goalkeepers, and the soccer ball in a small 30 second clip of a soccer match.</p>
-            </Link>
+          <Link to="/projects/offerly" className="project-card">
+            <h3>Offerly</h3>
+            <p>
+              Job application management platform with Gmail integration
+              for tracking applications, interviews, offers, and follow-ups.
+            </p>
+          </Link>
 
-            <Link to="/projects/sudoku" className="project-card">
-              <h3>Sudoku</h3>
-              <p>Sudoku game created using PyGame.</p>
-            </Link>
+          <Link to="/projects/gatorkeys" className="project-card">
+            <h3>GatorKeys</h3>
+            <p>Student housing marketplace built for UF students.</p>
+          </Link>
 
-            <Link to="/projects/personal_portfolio" className="project-card">
-              <h3>Personal Portfolio</h3>
-              <p>Personal website to learn more about me</p>
-            </Link>
+          <Link to="/projects/pickleportal" className="project-card">
+            <h3>PicklePortal</h3>
+            <p>Real-time pickleball court tracking dashboard.</p>
+          </Link>
 
-            <Link to="/projects/webchat" className="project-card">
-              <h3>Webchat Application</h3>
-              <p>Webchat application with AI features and a toxicity filter</p>
-            </Link>
-          </div>
+          <Link to="/projects/soccer_analysis" className="project-card">
+            <h3>Soccer Analysis Project</h3>
+            <p>
+              Program using the YOLOv5 detection model to detect players,
+              referees, goalkeepers, and the soccer ball in a soccer match.
+            </p>
+          </Link>
+
+          <Link to="/projects/sudoku" className="project-card">
+            <h3>Sudoku</h3>
+            <p>Sudoku game created using PyGame.</p>
+          </Link>
+
+          <Link to="/projects/personal_portfolio" className="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>Personal website to learn more about me.</p>
+          </Link>
+
+          <Link to="/projects/webchat" className="project-card">
+            <h3>Webchat Application</h3>
+            <p>Webchat application with AI features and a toxicity filter.</p>
+          </Link>
+
+        </div>
         </section>
 
         <section id="skills" className="section">
@@ -300,6 +323,7 @@ function Home() {
                 <span>Java</span>
                 <span>C++</span>
                 <span>JavaScript</span>
+                <span>TypeScript</span>
                 <span>SQL</span>
                 <span>HTML/CSS</span>
                 <span>C</span>
@@ -352,7 +376,7 @@ function Home() {
 
 
         <footer id="contact" className="footer">
-          <p>joseph.guzman05@hotmail.com</p>
+          <p>jguzmannn05@gmail.com</p>
           <p>561-891-9058</p>
         </footer>
       </div>
@@ -368,6 +392,8 @@ function Home() {
           <Route path="/projects/sudoku" element={<Sudoku />} />
           <Route path="/projects/personal_portfolio" element={<PersonalPortfolio />} />
           <Route path="/projects/webchat" element={<WebchatApplication />} />
+          <Route path="/projects/stacked" element={<Stacked />} />
+          <Route path="/projects/offerly" element={<Offerly />} />
         </Routes>
   )
   }

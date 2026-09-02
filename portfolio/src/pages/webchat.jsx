@@ -16,7 +16,6 @@ function PicklePortal() {
         <div className="project-buttons">
           <a href="https://github.com/guzmanJoseph/webchat" target="_blank" rel="noreferrer">GitHub Repo</a>
           <a href="https://www.youtube.com/watch?v=pyv2BN2uPiw" target="_blank" rel="noreferrer">Watch Demo</a>
-          <a href="YOUR_LIVE_LINK" target="_blank" rel="noreferrer">Live Site</a>
         </div>
       </section>
 
